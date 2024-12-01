@@ -1,0 +1,50 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <main>
+        <section>
+            <h1>What is Tuberculosis?<img src="{% static 'tb_ribon.webp' %}"  alt="TB Image" style="width: 50px; height: 50;" ></h1>
+            <p>Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. TB generally affects the lungs, but it can also affect other parts of the body. It spreads through the air when people who have active TB in their lungs cough, spit, speak, or sneeze.</p>
+
+            <h2>Major Causes for TB</h2>
+            <p>The major causes of TB include:</p>
+            <ul>
+                <li>Close contact with someone who has active TB.</li>
+                <li>Weakened immune system due to HIV, diabetes, or other health conditions.</li>
+                <li>Living or traveling to areas with high TB prevalence.</li>
+                <li>Poor living conditions, such as overcrowded and poorly ventilated spaces.</li>
+            </ul>
+
+            <h2>Why We Need TB AI Diagnosis in Rural Areas</h2>
+            <p>In rural areas, access to healthcare facilities and trained medical professionals is often limited. TB AI diagnosis can help in:</p>
+            <ul>
+                <li>Early detection of TB cases, leading to timely treatment.</li>
+                <li>Reducing the burden on healthcare professionals by providing accurate and quick diagnosis.</li>
+                <li>Improving the overall health outcomes by preventing the spread of TB.</li>
+            </ul>
+
+            <h2>How to Prevent TB</h2>
+            <p>Preventing TB involves several measures, including:</p>
+            <ul>
+                <li><strong>Test and Treat:</strong> Get tested for tuberculosis (TB) if you’re at high risk, and receive prompt treatment if infected.</li>
+                <li><strong>Wear a Mask:</strong> In crowded areas or when caring for someone with active TB, wear a mask to reduce transmission.</li>
+                <li><strong>Cover Your Mouth:</strong> Cough or sneeze into your elbow, not your hand, to prevent spreading TB bacteria.</li>
+                <li><strong>Get Vaccinated:</strong> Receive the Bacille Calmette-Guérin (BCG) vaccine, especially if you’re traveling to or living in areas with high TB prevalence.</li>
+                <li><strong>Practice Good Hygiene:</strong> Wash your hands frequently, especially after coughing or sneezing, to reduce the risk of transmission.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
