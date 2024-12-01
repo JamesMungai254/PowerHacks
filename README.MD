@@ -1,4 +1,4 @@
-# TB Analysis and Diagnosis
+# TB Chest X Ray (CXR) Analysis and Diagnosis
 
 This repository contains two main components:
 
