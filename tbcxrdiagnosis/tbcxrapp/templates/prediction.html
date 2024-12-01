@@ -20,9 +20,7 @@
     {% include 'navbar.html' %}
     
     <div class="container py-5">
-        <nav>
-            <a href="{% url 'welcome' %}" class="btn btn-primary mb-4">Home</a>
-        </nav>
+       
 
         <div class="text-center mb-5">
             <h1 class="display-4">Upload Chest X-ray Image</h1>
@@ -93,6 +91,20 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                {% else %}
+                    <div class="alert alert-success" role="alert">
+                        The prediction indicates that tuberculosis is not present. However, it is recommended to consult a doctor for further evaluation.
+                        <h3 class="my-4">Stay Healthy and Prevent TB</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item">Maintain good hygiene and wash your hands regularly.</li>
+                            <li class="list-group-item">Ensure proper ventilation in living spaces to reduce the risk of airborne infections.</li>
+                            <li class="list-group-item">Avoid close contact with individuals who have active TB.</li>
+                            <li class="list-group-item">Follow a healthy diet to strengthen your immune system.</li>
+                            <li class="list-group-item">Get vaccinated with the BCG vaccine if you are at high risk.</li>
+                            <li class="list-group-item">Seek medical advice if you experience symptoms such as a persistent cough, fever, or weight loss.</li>
+                        </ul>
                     </div>
                 {% endif %}
             {% endif %}

@@ -14,12 +14,15 @@ def welcome(request):
 def about(request):
     return render(request, 'about.html')
 
+def team(request):
+    return render(request, 'team.html')
+
 def upload_and_predict(request):
     if request.method == 'POST' and request.FILES['image']:
         # Save the uploaded image
         uploaded_image = request.FILES['image']
         
-        image_path =  os.path.join('media/uploads', uploaded_image.name)
+        image_path =  os.path.join('/uploads', uploaded_image.name)
         os.makedirs(os.path.dirname(os.path.join(settings.MEDIA_ROOT, image_path)), exist_ok=True)
         with open(os.path.join(settings.MEDIA_ROOT, image_path), 'wb+') as destination:
             for chunk in uploaded_image.chunks():
